@@ -1,0 +1,13 @@
+https://youtu.be/0fYi8SGA20k?si=em5FDHR7bIS_r917
+
+1. create vite then react
+    "npm create vite@latest ./ -- --template react"
+2. install tailwindcss
+    "npm install -D tailwindcss@3.4.1"
+    "npx tailwindcss@3.4.1 init -p"
+    "npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom"
+3. find asset (for this project just cnp)
+    3d models download
+    logo - logo.com
+4. App.jsx
+5. src/components

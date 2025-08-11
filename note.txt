@@ -11,3 +11,8 @@ https://youtu.be/0fYi8SGA20k?si=em5FDHR7bIS_r917
     logo - logo.com
 4. App.jsx
 5. src/components
+
+
+run locally - npm run dev
+
+redeploy - npm run deploy

@@ -30,6 +30,12 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import hrms from "./hrms.png"
+import utmcexp from "./utmcexp.png"
+import lingonow from "./lingonow.png"
+import carboncut from "./carboncut.jpg"
+import portfolio from "./portfolio.png"
+
 export {
   logo,
   backend,
@@ -59,4 +65,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  hrms,
+  utmcexp,
+  lingonow,
+  carboncut,
+  portfolio
 };

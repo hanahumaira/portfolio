@@ -23,20 +23,33 @@ import {
   jobit,
   tripguide,
   threejs,
+  hrms,
+  utmcexp,
+  lingonow,
+  carboncut,
+  portfolio
 } from "../assets";
+import { 
+  FaGithub, FaDocker, FaJava, FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaCloud, FaTools, FaCheckCircle
+} from "react-icons/fa";
+import { 
+  SiMongodb, SiMysql, SiPostgresql, SiSpringboot, SiTailwindcss, SiFigma, SiRasa, 
+  SiJira, SiJenkins, SiFirebase, SiFlutter, SiVuedotjs, 
+  SiPhp, SiTestin, SiJupyter 
+} from "react-icons/si";
 
 export const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
   {
     id: "about",
     title: "About",
   },
   {
     id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
+    title: "Projects",
   },
 ];
 
@@ -46,72 +59,68 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Software Quality Assurance",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Project Manager",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "ML Developer",
     icon: creator,
   },
 ];
 
-const technologies = [
+const techCategories = [
   {
-    name: "HTML 5",
-    icon: html,
+    title: "Languages",
+    items: [
+      { name: "HTML 5", icon: FaHtml5 },
+      { name: "CSS 3", icon: FaCss3 },
+      { name: "JavaScript", icon: FaJs },
+      { name: "Python", icon: FaPython },
+      { name: "Java", icon: FaJava },
+      { name: "PHP", icon: SiPhp }
+    ]
   },
   {
-    name: "CSS 3",
-    icon: css,
+    title: "Frameworks & Libraries",
+    items: [
+      { name: "React JS", icon: FaReact },
+      { name: "Vue.js", icon: SiVuedotjs },
+      { name: "Slim.php", icon: SiPhp },
+      { name: "Spring Boot", icon: SiSpringboot },
+      { name: "Tailwind CSS", icon: SiTailwindcss },
+      { name: "Node.js", icon: FaNodeJs },
+      { name: "Flutter", icon: SiFlutter },
+      { name: "Rasa", icon: SiRasa }
+    ]
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    title: "Databases",
+    items: [
+      { name: "MySQL", icon: SiMysql },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MongoDB", icon: SiMongodb }
+    ]
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+    title: "Tools & Platforms",
+    items: [
+      { name: "GitHub", icon: FaGithub },
+      { name: "Docker", icon: FaDocker },
+      { name: "Jira", icon: SiJira },
+      { name: "Jenkins", icon: SiJenkins },
+      { name: "JMeter", icon: FaTools  },
+      { name: "AWS", icon: FaCloud },
+      { name: "Firebase", icon: SiFirebase },
+      { name: "Figma", icon: SiFigma },
+      { name: "Katalon", icon: FaCheckCircle  },
+      { name: "TestLink", icon: SiTestin },
+      { name: "Jupyter Notebook", icon: SiJupyter }
+    ]
+  }
 ];
 
 const experiences = [
@@ -198,68 +207,66 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "HRMS",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Laravel-based HR management system integrated with Rasa conversational AI and deployed on Microsoft Azure, streamlining HR operations for Burhanuddin & Associates.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "laravel", color: "red-text-gradient" },
+      { name: "mysql", color: "green-text-gradient" },
+      { name: "rasa", color: "blue-text-gradient" },
+      { name: "azure", color: "pink-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: hrms,
+    live_demo_link: "https://drive.google.com/file/d/1HoYz2f1TAO1hAwjuATsUeIV2Fp1ffOxY/view?usp=drive_link", 
   },
   {
-    name: "Job IT",
+    name: "UTMCExp",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "System development for a web-based booking management system for UTM Campus Experience using Node.js, Angular, and PostgreSQL, hosted on AWS.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "nodejs", color: "green-text-gradient" },
+      { name: "angular", color: "red-text-gradient" },
+      { name: "postgresql", color: "blue-text-gradient" },
+      { name: "aws", color: "pink-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: utmcexp,
+    live_demo_link: "https://drive.google.com/file/d/1fsX8fqFReM-dubYgHdbM94WVBSg6GVtY/view?usp=drive_link", 
   },
   {
-    name: "Trip Guide",
+    name: "CarbonCut",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Spring Boot and MySQL-based carbon footprint monitoring system developed for Majlis Bandaraya Iskandar Puteri to enhance carbon emissions management.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "springboot", color: "green-text-gradient" },
+      { name: "mysql", color: "blue-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: carboncut,
+    source_code_link: "https://github.com/adamyaacob123/MBIP-SpringMVC", 
+  },
+  {
+    name: "Portfolio Website",
+    description:
+      "A 3D interactive personal portfolio website showcasing projects and skills, built using React, Three.js, Tailwind CSS, and Framer Motion.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "threejs", color: "green-text-gradient" },
+      { name: "tailwindcss", color: "pink-text-gradient" },
+      { name: "framermotion", color: "purple-text-gradient" },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/hanahumaira/portfolio", 
+  },
+  {
+    name: "LingoNow",
+    description:
+      "A web application for managing slang terms using Vue.js for the frontend and Slim.php for the backend, providing an intuitive interface for data management.",
+    tags: [
+      { name: "vuejs", color: "green-text-gradient" },
+      { name: "slimphp", color: "blue-text-gradient" },
+    ],
+    image: lingonow,
+    source_code_link: "https://github.com/abbyspeed/LingoNow", 
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, techCategories, experiences, testimonials, projects };

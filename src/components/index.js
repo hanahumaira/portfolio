@@ -7,6 +7,7 @@ import Experience from "./Experience";
 import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
+import SocialLinks from "./Social";
 // import CanvasLoader from "./CanvasLoader";
 
 export {
@@ -18,6 +19,7 @@ export {
   Works,
   Feedbacks,
   Contact,
+  SocialLinks,
 //   CanvasLoader,
   EarthCanvas,
   BallCanvas,

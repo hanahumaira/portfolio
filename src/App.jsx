@@ -1,6 +1,5 @@
-import { BrowserRouter } from "react-router-dom"
-
-import {About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarCanvas} from './components'
+import { BrowserRouter } from "react-router-dom";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarCanvas, SocialLinks } from './components';
 
 const App = () => {
   return (
@@ -8,20 +7,20 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Hero />
+          <div className="relative w-full min-h-screen">
+            <StarCanvas />
+            <Hero />
+          </div>
         </div>
         <About />
-        <Experience />
-        <Tech />
+        {/* <Experience /> */}
         <Works />
-        <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          <StarCanvas />
-        </div>
+        <Tech />
+        <SocialLinks />
+        {/* <Feedbacks /> */}
       </div>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -6,7 +6,6 @@ import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import { p } from 'framer-motion/client';
 import { FaVideo } from "react-icons/fa"; // for demo/video icon
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_demo_link }) => {
@@ -54,6 +53,20 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
   );
 };
 
+const ComingSoonCard = () => (
+  <motion.div variants={fadeIn("up", "spring", projects.length * 0.5, 0.75)}>
+    <Tilt
+      options={{ max: 45, scale: 1, speed: 450 }}
+      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full flex flex-col justify-center items-center"
+    >
+      <h3 className="text-white font-bold text-[24px] mb-2">Coming Soon</h3>
+      <p className="text-secondary text-[16px] text-center">
+        More projects are on the way! Stay tuned.
+      </p>
+    </Tilt>
+  </motion.div>
+);
+
 const Works = () => {
   return (
     <>
@@ -68,10 +81,10 @@ const Works = () => {
 
       <div className='w-full flex'>
         <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          variants={fadeIn("", "", 0.1, 1)}
+          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-        Here are a few of my projects that showcase my skills and experience. Feel free to explore them! 
+          Here are a few of my projects that showcase my skills and experience. Feel free to explore them! 
         </motion.p>
       </div>
 
@@ -79,6 +92,7 @@ const Works = () => {
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
+        <ComingSoonCard />
       </div>
     </>
   );

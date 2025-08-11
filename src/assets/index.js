@@ -36,6 +36,8 @@ import lingonow from "./lingonow.png"
 import carboncut from "./carboncut.jpg"
 import portfolio from "./portfolio.png"
 import eventhub from "./eventhub.png"
+import geo from "./geo.jpg"
+import soon from "./soon.png";
 
 export {
   logo,
@@ -71,5 +73,7 @@ export {
   lingonow,
   carboncut,
   portfolio,
-  eventhub
+  eventhub,
+  geo,
+  soon
 };

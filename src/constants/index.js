@@ -28,7 +28,9 @@ import {
   lingonow,
   carboncut,
   portfolio,
-  eventhub
+  eventhub,
+  geo,
+  soon
 } from "../assets";
 import { 
   FaGithub, FaDocker, FaJava, FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaCloud, FaTools, FaCheckCircle
@@ -243,6 +245,18 @@ const projects = [
     ],
     image: eventhub,
     source_code_link: "https://github.com/hanahumaira/EventHub",
+  },
+  {
+    name: "APGCE Geohackathon",
+    description:
+      "Developed machine learning models using big data from Geology & Geophysics subsurface datasets for the Asia Petroleum Geoscience Conference & Exhibition.",
+    tags: [
+      { name: "machine learning", color: "blue-text-gradient" },
+      { name: "big data", color: "green-text-gradient" },
+      { name: "geoscience", color: "pink-text-gradient" },
+    ],
+    image: geo, 
+    source_code_link: "https://github.com/hanahumaira/geo-things",
   },
   {
     name: "CarbonCut",

@@ -35,6 +35,7 @@ import utmcexp from "./utmcexp.png"
 import lingonow from "./lingonow.png"
 import carboncut from "./carboncut.jpg"
 import portfolio from "./portfolio.png"
+import eventhub from "./eventhub.png"
 
 export {
   logo,
@@ -69,5 +70,6 @@ export {
   utmcexp,
   lingonow,
   carboncut,
-  portfolio
+  portfolio,
+  eventhub
 };

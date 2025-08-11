@@ -27,7 +27,8 @@ import {
   utmcexp,
   lingonow,
   carboncut,
-  portfolio
+  portfolio,
+  eventhub
 } from "../assets";
 import { 
   FaGithub, FaDocker, FaJava, FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaCloud, FaTools, FaCheckCircle
@@ -55,7 +56,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
@@ -233,6 +234,17 @@ const projects = [
     live_demo_link: "https://drive.google.com/file/d/1fsX8fqFReM-dubYgHdbM94WVBSg6GVtY/view?usp=drive_link", 
   },
   {
+    name: "EventHub",
+    description:
+      "Built the backend of a mobile event-based application using Flutter and Firebase, improving event management efficiency.",
+    tags: [
+      { name: "flutter", color: "blue-text-gradient" },
+      { name: "firebase", color: "orange-text-gradient" },
+    ],
+    image: eventhub,
+    source_code_link: "https://github.com/hanahumaira/EventHub",
+  },
+  {
     name: "CarbonCut",
     description:
       "A Spring Boot and MySQL-based carbon footprint monitoring system developed for Majlis Bandaraya Iskandar Puteri to enhance carbon emissions management.",
@@ -242,6 +254,17 @@ const projects = [
     ],
     image: carboncut,
     source_code_link: "https://github.com/adamyaacob123/MBIP-SpringMVC", 
+  },
+  {
+    name: "LingoNow",
+    description:
+      "A web application for managing slang terms using Vue.js for the frontend and Slim.php for the backend, providing an intuitive interface for data management.",
+    tags: [
+      { name: "vuejs", color: "green-text-gradient" },
+      { name: "slimphp", color: "blue-text-gradient" },
+    ],
+    image: lingonow,
+    source_code_link: "https://github.com/abbyspeed/LingoNow", 
   },
   {
     name: "Portfolio Website",
@@ -255,17 +278,6 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/hanahumaira/portfolio", 
-  },
-  {
-    name: "LingoNow",
-    description:
-      "A web application for managing slang terms using Vue.js for the frontend and Slim.php for the backend, providing an intuitive interface for data management.",
-    tags: [
-      { name: "vuejs", color: "green-text-gradient" },
-      { name: "slimphp", color: "blue-text-gradient" },
-    ],
-    image: lingonow,
-    source_code_link: "https://github.com/abbyspeed/LingoNow", 
   },
 ];
 

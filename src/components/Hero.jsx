@@ -79,7 +79,7 @@ const Hero = () => {
         <div className="mt-6 flex flex-wrap gap-4">
           {/* Resume */}
           <a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1wY3jpoQEPFNzLZoXBExz2OODSUWQfkZ4/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-purple-500 text-white px-4 py-2 rounded-lg 

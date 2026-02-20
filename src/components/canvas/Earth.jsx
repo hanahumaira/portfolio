@@ -1,18 +1,39 @@
-import React, {Suspense} from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Earth = () => {
+const Earth = ({ isMobile }) => {
     const earth = useGLTF("./planet/scene.gltf");
 
     return(
-        <primitive object={earth.scene} scale={2} position-y={0} rotation-y={0} />
+        <primitive
+            object={earth.scene}
+            scale={isMobile ? 1.7 : 2}
+            position={[0, isMobile ? -0.15 : 0, 0]}
+            rotation-y={0}
+        />
     );
 };
 
 const EarthCanvas = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 768px)");
+        setIsMobile(mediaQuery.matches);
+
+        const handleMediaQueryChange = (event) => {
+            setIsMobile(event.matches);
+        };
+
+        mediaQuery.addEventListener("change", handleMediaQueryChange);
+        return () => {
+            mediaQuery.removeEventListener("change", handleMediaQueryChange);
+        };
+    }, []);
+
     return (
         <Canvas
             style={{ width: "100%", height: "100%" }}
@@ -21,10 +42,10 @@ const EarthCanvas = () => {
             dpr={[1, 2]}
             gl={{preserveDrawingBuffer:true}}
             camera={{
-                fov: 45,
+                fov: isMobile ? 54 : 45,
                 near:0.01,
                 far: 500,
-                position: [-4, 3, 6],
+                position: isMobile ? [-4.6, 2.9, 7.2] : [-4, 3, 6],
             }}
         >
             <Suspense fallback={<CanvasLoader />}>
@@ -34,7 +55,7 @@ const EarthCanvas = () => {
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />
-                <Earth />
+                <Earth isMobile={isMobile} />
                 <Preload all />
             </Suspense>
         </Canvas>

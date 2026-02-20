@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineDocumentText } from "react-icons/hi";
@@ -66,14 +65,14 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen flex flex-col md:flex-row items-center justify-center text-white overflow-hidden bg-transparent">
+    <section className="relative w-full min-h-[calc(100vh-80px)] flex flex-col md:flex-row items-center md:items-stretch justify-center text-white bg-transparent py-14 md:py-0 gap-10 md:gap-0">
       {/* Left Text Section */}
-      <div className="flex-1 flex flex-col justify-center px-8 md:px-16 z-10">
-        <h1 className="text-lg md:text-xl mb-4">{topLine}</h1>
-        <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-2 sm:px-4 md:px-8 z-10">
+        <h1 className="text-base sm:text-lg md:text-xl mb-3">{topLine}</h1>
+        <h2 className="text-3xl xs:text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 to-purple-300 bg-clip-text text-transparent leading-tight">
           I'm Hana Humaira.
         </h2>
-        <p className="mt-4 text-purple-300 text-lg">{currentText}</p>
+        <p className="mt-4 text-purple-300 text-base sm:text-lg">{currentText}</p>
 
         {/* Buttons */}
         <div className="mt-6 flex flex-wrap gap-4">
@@ -118,10 +117,10 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right Earth Canvas Section (fixed height like Contact) */}
-      <div className="flex-1 flex justify-center items-center relative h-[60vh] md:h-screen w-full">
-  <EarthCanvas />
-</div>
+      {/* Right Earth Canvas Section */}
+      <div className="w-full md:w-1/2 flex justify-center items-center relative h-[46vh] xs:h-[52vh] md:h-[68vh] lg:h-[76vh] min-h-[320px] overflow-visible">
+        <EarthCanvas />
+      </div>
 
       {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center">
         <a href="#about">

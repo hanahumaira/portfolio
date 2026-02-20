@@ -13,7 +13,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt 
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl w-full max-w-[360px] mx-auto"
       >
         <div className='relative w-full h-[230px]'>
           <img src={image} alt={name} className='w-full h-full object-cover rounded-2xl' />
@@ -57,7 +57,7 @@ const ComingSoonCard = () => (
   <motion.div variants={fadeIn("up", "spring", projects.length * 0.5, 0.75)}>
     <Tilt
       options={{ max: 45, scale: 1, speed: 450 }}
-      className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full flex flex-col justify-center items-center"
+      className="bg-tertiary p-5 rounded-2xl w-full max-w-[360px] mx-auto flex flex-col justify-center items-center"
     >
       <h3 className="text-white font-bold text-[24px] mb-2">Coming Soon</h3>
       <p className="text-secondary text-[16px] text-center">
@@ -88,7 +88,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 justify-items-center'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

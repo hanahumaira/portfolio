@@ -30,7 +30,12 @@ import {
   portfolio,
   eventhub,
   geo,
-  soon
+  soon,
+  maipk,
+  lphp,
+  escort,
+  gates,
+  uniqueedge
 } from "../assets";
 import { 
   FaGithub, FaDocker, FaJava, FaPython, FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaCloud, FaTools, FaCheckCircle
@@ -128,55 +133,29 @@ const techCategories = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Full Stack Developer",
+    company_name: "Gates IT Solution",
+    icon: gates,
+    iconBg: "#ffffff",
+    date: "Sept 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed and maintained government web systems for Perak state agencies, covering wakaf baitulmal, zakat, bantuan, and perumahan services.",
+      "Built and enhanced full-stack Laravel modules with MySQL to support reliable service workflows and day-to-day operations.",
+      "Handled user acceptance testing (UAT) with stakeholders to validate system functionality before release.",
+      "Conducted end-user training sessions and post-deployment support to improve system adoption.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Freelance Software Developer",
+    company_name: "Unique Edge Technology",
+    icon: uniqueedge,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Aug 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and developed the full-stack Energy Efficiency and Conservation Reporting Tool (ESCORT) from scratch in a 2-person team.",
+      "Contributed across architecture, backend and frontend implementation, testing, and delivery.",
+      "Implemented multi-year energy performance analysis to support trend tracking and decision-making.",
+      "Built compliance-ready reporting features to support regulatory submission workflows.",
     ],
   },
 ];
@@ -209,6 +188,53 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "MAIPKBestari",
+    description:
+      "Developed a full-stack government system for wakaf baitulmal, zakat, and bantuan modules for MAIPk Perak.",
+    tags: [
+      { name: "laravel", color: "red-text-gradient" },
+      { name: "mysql", color: "blue-text-gradient" },
+      { name: "jenkins", color: "green-text-gradient" },
+    ],
+    image: maipk,
+  },
+  {
+    name: "MyLPHP",
+    description:
+      "Developed a housing management web system for Lembaga Perumahan dan Hartanah Perak (LPHP) Perak.",
+    tags: [
+      { name: "laravel", color: "red-text-gradient" },
+      { name: "mysql", color: "blue-text-gradient" },
+      { name: "livewire", color: "pink-text-gradient" },
+      { name: "jenkins", color: "green-text-gradient" },
+    ],
+    image: lphp,
+  },
+  {
+    name: "ESCORT",
+    description:
+      "Developed a full-stack web system for energy efficiency reporting with multi-year analysis and compliance-ready reporting for Unique Edge Technology.",
+    tags: [
+      { name: "laravel", color: "red-text-gradient" },
+      { name: "mysql", color: "blue-text-gradient" },
+      { name: "figma", color: "pink-text-gradient" },
+    ],
+    image: escort,
+  },
+  {
+    name: "Portfolio",
+    description:
+      "A 3D interactive personal portfolio website showcasing projects and skills, built using React, Three.js, Tailwind CSS, and Framer Motion.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "threejs", color: "green-text-gradient" },
+      { name: "tailwindcss", color: "pink-text-gradient" },
+      { name: "framermotion", color: "purple-text-gradient" },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/hanahumaira/portfolio", 
+  },
   {
     name: "HRMS",
     description:
@@ -279,19 +305,6 @@ const projects = [
     ],
     image: lingonow,
     source_code_link: "https://github.com/abbyspeed/LingoNow", 
-  },
-  {
-    name: "Portfolio Website",
-    description:
-      "A 3D interactive personal portfolio website showcasing projects and skills, built using React, Three.js, Tailwind CSS, and Framer Motion.",
-    tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "threejs", color: "green-text-gradient" },
-      { name: "tailwindcss", color: "pink-text-gradient" },
-      { name: "framermotion", color: "purple-text-gradient" },
-    ],
-    image: portfolio,
-    source_code_link: "https://github.com/hanahumaira/portfolio", 
   },
 ];
 

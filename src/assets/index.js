@@ -38,6 +38,11 @@ import portfolio from "./portfolio.png"
 import eventhub from "./eventhub.png"
 import geo from "./geo.jpg"
 import soon from "./soon.png";
+import maipk from "./maipk.png";
+import lphp from "./lphp.png";
+import escort from "./escort.png";
+import gates from "./gates.jpeg";
+import uniqueedge from "./uniqueedge.png";
 
 export {
   logo,
@@ -75,5 +80,10 @@ export {
   portfolio,
   eventhub,
   geo,
-  soon
+  soon,
+  maipk,
+  lphp,
+  escort,
+  gates,
+  uniqueedge
 };
